@@ -5,6 +5,8 @@ import MovieFilters from './components/MovieFilters/MovieFilters';
 import MoviesList from './components/MoviesList/MoviesList';
 import MoviesStatistic from './components/MoviesStatistic/MoviesStatistic';
 import MoviesSorting from './components/MoviesSorting/MoviesSorting';
+import CardMovieModal from './components/Modals/CardMovieModal/CardMovieModal';
+import DeleteMovieModal from './components/Modals/DeleteMovieModal/DeleteMovieModal';
 import { mockedData } from './mockedData';
 import { searchMovies } from './utils/searchMovies';
 import { filterMovies } from './utils/filterMovies';
@@ -38,6 +40,8 @@ const App = () => {
       <footer className="footer-content">
         <Footer/>
       </footer>
+      <CardMovieModal />
+      <DeleteMovieModal />
     </>
   );
 };

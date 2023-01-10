@@ -1,8 +1,11 @@
+@import '../colors';
+
 .main-header {
   background-image: url('./assets/header-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+
   .header {
     display: flex;
     align-items: center;
@@ -13,8 +16,8 @@
       height: 40px;
       width: 140px;
       text-transform: uppercase;
-      color: #f65261;
-      background-color: #555555;
+      color: $secondaryColor;
+      background-color: $secondaryBackgroundColor;
       cursor: pointer;
       border-radius: 5px;
     }

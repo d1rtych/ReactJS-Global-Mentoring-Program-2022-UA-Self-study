@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import Logo from '../Logo/Logo';
 import Search from './Search/Search';
-import PropTypes from 'prop-types';
+import { StatusModalsContext } from '../../context/StatusModalsContext';
+import { typeAdd } from '../../constants';
 import './MainHeader.scss';
 
 const MainHeader = ({ setSearchValue }) => {
+  const { setIsCardModalOpen, setTypeOfEvent } = useContext(StatusModalsContext);
+
+  const openAddMovieModal = () => {
+    setIsCardModalOpen(true);
+    setTypeOfEvent(typeAdd);
+  };
   return (
     <div className="main-header">
       <div className="header container">
         <Logo/>
         <div className="add-button">
-          <button>+ Add Movie</button>
+          <button onClick={openAddMovieModal}>+ Add Movie</button>
         </div>
       </div>
       <Search setSearchValue={setSearchValue}/>

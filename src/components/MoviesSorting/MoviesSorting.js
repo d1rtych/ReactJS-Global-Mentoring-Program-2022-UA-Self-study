@@ -13,7 +13,9 @@ const MoviesSorting = ({ setTypeSorting, typeSorting }) => {
 
   const menu = (
     <Menu onSelect={onSelect}>
-      {Object.entries(typeOfSorting).map(([key, value]) => <MenuItem className='menu-item' key={key}>{value}</MenuItem>)}
+      {Object.entries(typeOfSorting).map(([key, value]) => (
+        <MenuItem className='menu-item' key={key}>{value}</MenuItem>
+      ))}
     </Menu>
   );
 
