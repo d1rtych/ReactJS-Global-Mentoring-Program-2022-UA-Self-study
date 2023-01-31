@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import './Search.scss';
-import { Button } from '../../Button/Button';
+import { Button } from '../../UI/Button/Button';
 
 const Search = ({ setSearchValue }) => {
   const [value, setValue] = useState('');

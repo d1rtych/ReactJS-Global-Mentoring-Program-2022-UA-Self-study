@@ -1,4 +1,6 @@
 export const ALL = 'all';
+export const typeEdit = 'edit';
+export const typeAdd = 'add';
 
 export const oldToNew = 'oldToNew';
 export const newToOld = 'newToOld';

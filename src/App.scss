@@ -1,5 +1,4 @@
-$mainBackgroundColor: #232323;
-$mainColor: #ffffff;
+@import './components/colors';
 
 * {
   margin: 0;
@@ -8,8 +7,8 @@ $mainColor: #ffffff;
 }
 
 body {
-  background-color: $mainBackgroundColor;
-  color: $mainColor;
+  background-color: $backgroundColor;
+  color: $primaryColor;
   font-family: 'Orienta', sans-serif;
 }
 
@@ -25,11 +24,12 @@ body {
 .main-content {
   min-height: calc(100vh - 340px);
 
-.sort-and-filters {
-  display: flex;
-  justify-content: space-between;
+  .sort-and-filters {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-}
+
 .footer-content {
   height: 40px;
 }
