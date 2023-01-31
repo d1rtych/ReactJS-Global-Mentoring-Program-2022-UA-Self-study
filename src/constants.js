@@ -13,3 +13,12 @@ export const typeOfSorting = {
   [asc]: 'A to Z',
   [desc]: 'Z to A',
 };
+
+export const resetedState = {
+  title: '',
+  release_date: '',
+  url: '',
+  genre: '',
+  overview: '',
+  runtime: '',
+};

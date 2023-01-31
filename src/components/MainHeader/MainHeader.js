@@ -13,6 +13,7 @@ const MainHeader = ({ setSearchValue }) => {
     setIsCardModalOpen(true);
     setTypeOfEvent(typeAdd);
   };
+
   return (
     <div className="main-header">
       <div className="header container">
