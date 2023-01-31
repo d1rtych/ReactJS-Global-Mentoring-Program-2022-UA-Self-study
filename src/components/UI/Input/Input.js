@@ -5,7 +5,7 @@ export const Input = ({ placeholder, title, isDate, value, onChange, name }) => 
   const [inputType, setInputType] = useState('text');
 
   return (
-    <div className="input-component">
+    <div className='input-component'>
       <label>
         <span>{title}</span>
         <input

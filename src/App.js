@@ -40,8 +40,8 @@ const App = () => {
       <footer className="footer-content">
         <Footer/>
       </footer>
-      <CardMovieModal />
-      <DeleteMovieModal />
+      <CardMovieModal/>
+      <DeleteMovieModal/>
     </>
   );
 };

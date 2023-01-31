@@ -8,7 +8,6 @@ const DeleteMovieModal = () => {
   const { isDeleteModalOpen, setIsDeleteModalOpen, idChosenCard } = useContext(StatusModalsContext);
 
   const deleteMovie = () => {
-    console.log('asdasd')
     setIsDeleteModalOpen(false);
     alert(`Movie with id: ${idChosenCard} was deleted`);
   };

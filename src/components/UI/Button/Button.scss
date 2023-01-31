@@ -1,8 +1,36 @@
+@import '../../colors';
+
 .button {
   text-transform: uppercase;
   border-radius: 5px;
-  background-color: #f65261;
-  color: #ffffff;
   cursor: pointer;
   padding: 10px 35px;
+}
+
+.button-primary {
+  background-color: $secondaryColor;
+  color: #ffffff;
+
+  &:hover {
+    background-color: $secondaryHoverColor;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $secondaryFocusColor;
+  }
+}
+
+.button-secondary {
+  background-color: inherit;
+  color: $secondaryColor;
+  border: 1px solid $secondaryColor;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $secondaryFocusColor;
+  }
 }
